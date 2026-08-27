@@ -2,7 +2,7 @@
 
 * **97003968** – Wubbo Boiten
 * **97132891** – Mick Olthoff
-* **97080691** – Max
+* **97080691** – Max De Wit
 
 ## Projectgegevens
 
