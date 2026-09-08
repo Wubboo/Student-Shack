@@ -12,7 +12,7 @@
 
 * Home page maken
     * banner maken
-    * data base opzetten
+    * database opzetten
     * Querys maken voor zoek filters    
     * zoekbalk maken
     * kamer kaart maken
