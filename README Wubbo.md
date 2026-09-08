@@ -63,3 +63,5 @@ Tijdens dit project wil ik het volgende leren:
 * **Backend & Frontend koppelen:** Leren hoe ik de gegevens uit de database via een eigen API naar de React-voorkant stuur.
 
 * **Netjes werken met Git:** Leren hoe ik mijn code goed bijhoud en opsla via GitHub.
+
+
