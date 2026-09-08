@@ -4,7 +4,7 @@
 
 * **97132891** – Mick Olthoff
 
-* **97080691** – Max De Wit
+* **97080691** – Max de Wit
 
 ## Projectgegevens
 
