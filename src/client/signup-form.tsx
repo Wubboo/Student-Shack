@@ -1,6 +1,6 @@
 "use client";
 
-import { authenticate } from "@/server/signup-user";
+import { signup } from "@/server/signup-user";
 import { SignupState } from "@/shared/signup-state";
 import { useActionState } from "react";
 
@@ -10,7 +10,7 @@ const initialState: SignupState = {
 };
 
 export function SignupForm() {
-    const [state, formAction, isPending] = useActionState(authenticate, initialState);
+    const [state, formAction, isPending] = useActionState(signup, initialState);
 
     return state.success ? (
         <p>Account created!</p>
