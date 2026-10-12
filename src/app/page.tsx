@@ -1,10 +1,11 @@
 import "./page.css";
+import Banner from "../client/banner-component-mobile/banner"
+
 
 function App() {
     return (
         <div>
-            <h1>Student Shack</h1>
-            <p>Frontend is working!</p>
+            <Banner />
         </div>
     );
 }

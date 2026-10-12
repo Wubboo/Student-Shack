@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing:  border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-bar {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.burger-button {
+    width: 50px;
+    height: 50px;
+    background: url;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-button svg {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
