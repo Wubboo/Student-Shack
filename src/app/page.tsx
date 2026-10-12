@@ -1,6 +1,5 @@
 import "./page.css";
-import Banner from "../client/banner-component-mobile/banner"
-
+import Banner from "../client/banner-component-mobile/banner";
 
 function App() {
     return (

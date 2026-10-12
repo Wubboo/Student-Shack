@@ -5,10 +5,10 @@ import { toJson } from "@/shared/to-json";
 
 /**
  * @description The `signup` function is used to create an account for a user. NOTE: unfinished
- * 
+ *
  * @param _previousState The previous `SignupState`.
  * @param formData The `FormData` object to validate.
- * @returns `SignupState`, which can be used to tell the user what went wrong and why. 
+ * @returns `SignupState`, which can be used to tell the user what went wrong and why.
  */
 export async function signup(
     _previousState: SignupState,
@@ -29,7 +29,6 @@ export async function signup(
         };
     }
 
-    
     const _data = result.data;
     // TODO: pass data to the PSQL server.
 

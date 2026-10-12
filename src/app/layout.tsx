@@ -18,7 +18,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html lang="en">
-            <head></head>
+            <head>
+                <style>
+                    @import
+                    url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+                </style>
+            </head>
             <body>{children}</body>
         </html>
     );
