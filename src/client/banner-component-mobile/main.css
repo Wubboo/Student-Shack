@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -38,7 +37,9 @@
     border-radius: 10px;
     cursor: pointer;
 
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
 }
 
 .burger-button:hover {
@@ -120,8 +121,9 @@
     gap: 20px;
 }
 
-#login, #register {
+#login,
+#register {
     border-radius: 10px;
-    outline: 2px solid black;
+    border: 1px solid black;
     min-height: 40px;
 }
