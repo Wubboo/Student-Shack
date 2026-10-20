@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -11,11 +12,12 @@
 
 .banner-bar {
     width: 100%;
-    min-height: 7vh;
+    min-height: 6vh;
     background-color: white;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid grey;
+    align-items: center;
 }
 
 .banner-bar svg {
@@ -26,18 +28,32 @@
 .burger-button {
     width: 44px;
     height: 44px;
-    background: url;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: transparent;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
+
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.burger-button:hover {
+    background-color: #e8def8;
+}
+
+/* Effect while clicking */
+.burger-button:active {
+    background-color: #d5c2ef;
+    transform: scale(0.9);
 }
 
 .burger-button svg {
-    position: relative;
-    inset: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
     pointer-events: none;
 }
 

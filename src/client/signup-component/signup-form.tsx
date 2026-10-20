@@ -1,5 +1,5 @@
 "use client";
-
+import "./main.css";
 import { signup } from "@/server/signup-user";
 import { SignupState } from "@/shared/signup-state";
 import { useActionState } from "react";
@@ -15,19 +15,22 @@ export function SignupForm() {
     return state.success ? (
         <p>Account created!</p>
     ) : (
-        <form action={formAction}>
+        <form action={formAction} className="signup-form">
             
-            <input name="name" type="text" />
+            <label htmlFor="name">Naam</label>
+            <input name="name" type="text" id="name" />
             {state.errors?.name?.map((error) => (
                 <p key={error}>{error}</p>
             ))}
 
-            <input name="email" type="email" />
+            <label htmlFor="email">E-mail</label>
+            <input name="email" type="email"id="email"/>
             {state.errors?.email?.map((error) => (
                 <p key={error}>{error}</p>
             ))}
 
-            <input name="password" type="password" />
+            <label htmlFor="password">Wachtwoord</label>
+            <input name="password" type="password" id="password"/>
             {state.errors?.password?.map((error) => (
                 <p key={error}>{error}</p>
             ))}
