@@ -26,11 +26,15 @@ function Banner() {
 
             {menuOpen && (
                 <div className="burger-menu">
-                    <a href="./home">home</a>
+                    <a href="./" id="home">Home</a>
                     <a href="./zoeken">zoeken</a>
                     <a href="./over-ons">over ons</a>
                     <a href="./faq">FAQ</a>
                     <a href="./contact">contact</a>
+                    <div className="login-buttons">
+                        <a href="" id="login">Login</a>
+                        <a href="/register" id="register">Registreren</a>
+                    </div>
                 </div>
             )}
         </div>

@@ -16,6 +16,7 @@ export function SignupForm() {
         <p>Account created!</p>
     ) : (
         <form action={formAction}>
+            
             <input name="name" type="text" />
             {state.errors?.name?.map((error) => (
                 <p key={error}>{error}</p>

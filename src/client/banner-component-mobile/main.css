@@ -93,3 +93,19 @@
     transform: translateX(8px);
     background-color: #e8def8;
 }
+
+.login-buttons {
+    display: flex;
+    align-items: center;
+    /* padding-top: 50px; */
+    /* display: inline-block; */
+    height: 100px;
+    width: 100%;
+    gap: 20px;
+}
+
+#login, #register {
+    border-radius: 10px;
+    outline: 2px solid black;
+    min-height: 40px;
+}
