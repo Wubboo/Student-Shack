@@ -14,14 +14,14 @@ export type LoadingProps = {
 
 /**
  * @description Simple loading icon svg.
- * 
+ *
  * @param size size of the loading icon. Default 40px.
  * @param color color of the loading icon. Inherits from parent by default.
  * @param strokeWidth width of the loading circle itself. 4px by default.
  * @param duration time in seconds for the loading icon to rotate. 1s by default.
  * @param turnRight wether it turns right or left. Default is `true`.
  * @param ariaLabel The Aria label. Default is `"Loading"`.
-*/
+ */
 export function Loading({
     size = DEFAULT_SIZE,
     color = DEFAULT_COLOR,
@@ -32,13 +32,7 @@ export function Loading({
 }: LoadingProps) {
     const dir = turnRight ? "" : "-";
     return (
-        <svg
-            width={size}
-            height={size}
-            viewBox="0 0 40 40"
-            aria-label={ariaLabel}
-            role="img"
-        >
+        <svg width={size} height={size} viewBox="0 0 40 40" aria-label={ariaLabel} role="img">
             <circle
                 cx="20"
                 cy="20"

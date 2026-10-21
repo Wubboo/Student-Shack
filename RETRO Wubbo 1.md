@@ -1,13 +1,15 @@
 ## Projectgegevens
+
 **Naam:** Student Shack  
 **Sprint startdatum:** 08-09-2026  
-**Sprint einddatum:** 15-09-2026  
+**Sprint einddatum:** 15-09-2026
 
 ---
 
 ## Studentgegevens
+
 **Naam:** Wubbo Boiten  
-**Studentnummer:** 97003968  
+**Studentnummer:** 97003968
 
 ---
 

@@ -5,15 +5,15 @@ import * as z from "zod";
  * @description Use this to validate wether a signup form has been passed the correct arguments on the server.
  */
 export const SignupSchema = z.object({
-    name: z.string().min(2, { error: "Name must be at least 2 characters long." }).trim(),
-    email: z.email({ error: "Please enter a valid email." }).trim(),
+    name: z.string().min(2, { error: "Naam moet minimaal 2 karakters lang zijn." }).trim(),
+    email: z.email({ error: "Voer een geldig email adress in." }).trim(),
     password: z
         .string()
-        .min(8, { error: "Be at least 8 characters long" })
-        .regex(/[a-zA-Z]/, { error: "Contain at least one letter." })
-        .regex(/[0-9]/, { error: "Contain at least one number." })
+        .min(8, { error: "Moet minimaal 8 karakters lang zijn" })
+        .regex(/[a-zA-Z]/, { error: "Bevat minimaal 1 letter." })
+        .regex(/[0-9]/, { error: "Bevat minimaal 1 cijfer." })
         .regex(/[^a-zA-Z0-9]/, {
-            error: "Contain at least one special character.",
+            error: "Bevat minimaal 1 speciaal karakter.",
         })
         .trim(),
 });
