@@ -34,10 +34,10 @@ function Banner() {
                     <a href="./faq">FAQ</a>
                     <a href="./contact">contact</a>
                     <div className="login-buttons">
-                        <a href="" id="login">
+                        <a href="./login" id="login">
                             Login
                         </a>
-                        <a href="/register" id="register">
+                        <a href="./register" id="register">
                             Registreren
                         </a>
                     </div>
