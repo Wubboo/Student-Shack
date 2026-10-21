@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 // Frontend React is mounted inside of the RootLayout
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
-        <html lang="en">
+        <html lang="nl">
             <head>
                 <style>
                     @import
