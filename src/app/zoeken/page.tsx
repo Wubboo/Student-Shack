@@ -1,4 +1,4 @@
-import { SignupForm } from "@/client/signup-component/signup-form";
+import { SignupForm } from "@/client/auth-forms/form";
 import Banner from "@/client/banner-component-mobile/banner";
 
 export default function Page() {
