@@ -19,7 +19,6 @@ wat ik deze week af wil hebben:
 -mobile about us page
 -mobile login page (gekoppeld)
 
-
 ## Leerdoelen
 
 hoe ik Met css automatisch schakelen tussen mobile en dekstop components.
