@@ -5,9 +5,12 @@ import { signIn, signUp } from "@/server/auth";
 import { Input } from "./form-input";
 import "./main.css";
 
-const Username = ({ disabled, errors }: {
-    disabled?: boolean | undefined,
-    errors?: string[] | undefined
+const Username = ({
+    disabled,
+    errors,
+}: {
+    disabled?: boolean | undefined;
+    errors?: string[] | undefined;
 }) => (
     <Input
         label="Gebruikersnaam"
@@ -22,9 +25,12 @@ const Username = ({ disabled, errors }: {
     />
 );
 
-const Email = ({ disabled, errors }: {
-    disabled?: boolean | undefined,
-    errors?: string[] | undefined
+const Email = ({
+    disabled,
+    errors,
+}: {
+    disabled?: boolean | undefined;
+    errors?: string[] | undefined;
 }) => (
     <Input
         label="Email"
@@ -39,10 +45,14 @@ const Email = ({ disabled, errors }: {
     />
 );
 
-const Password = ({ disabled, autoComplete, errors }: {
-    disabled?: boolean | undefined,
-    autoComplete?: HTMLInputAutoCompleteAttribute | undefined
-    errors?: string[] | undefined
+const Password = ({
+    disabled,
+    autoComplete,
+    errors,
+}: {
+    disabled?: boolean | undefined;
+    autoComplete?: HTMLInputAutoCompleteAttribute | undefined;
+    errors?: string[] | undefined;
 }) => (
     <Input
         label="Password"
@@ -74,7 +84,7 @@ export function SignUpForm({ onSuccess }: { onSuccess?: () => void }) {
             <Email disabled={disabled} errors={errors?.email} />
             <Password disabled={disabled} autoComplete="new-password" errors={errors?.password} />
             <button disabled={disabled}>Aanmelden</button>
-            {success && (<p>Gebruiker aangemeld!</p>)}
+            {success && <p>Gebruiker aangemeld!</p>}
         </form>
     );
 }
@@ -92,9 +102,13 @@ export function SignInForm({ onSuccess }: { onSuccess?: () => void }) {
     return (
         <form action={serverAction} className="signup-form">
             <Email disabled={disabled} errors={errors?.email} />
-            <Password disabled={disabled} autoComplete="current-password" errors={errors?.password} />
+            <Password
+                disabled={disabled}
+                autoComplete="current-password"
+                errors={errors?.password}
+            />
             <button disabled={disabled}>Inloggen</button>
-            {success && (<p>Gebruiker ingelogd!</p>)}
+            {success && <p>Gebruiker ingelogd!</p>}
         </form>
     );
 }

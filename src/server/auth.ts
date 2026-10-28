@@ -49,7 +49,8 @@ export async function signIn(_prev: AuthFormState, formData: FormData): Promise<
     const user = rows[0];
 
     const valid = await argon2.verify(user?.password_hash ?? (await getDummyHash()), password);
-    if (!user || !valid || !user.is_active) return { success: false, message: "Onjuist e-mailadres of wachtwoord" };
+    if (!user || !valid || !user.is_active)
+        return { success: false, message: "Onjuist e-mailadres of wachtwoord" };
 
     await createSession(user.id);
     console.log(`successfully logged in user '${email}'`);
