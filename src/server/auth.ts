@@ -37,9 +37,10 @@ export async function signUp(_prev: AuthFormState, formData: FormData): Promise<
     }
 }
 
+const invalidEmailOrPassword = "Onjuist e-mailadres of wachtwoord";
 export async function signIn(_prev: AuthFormState, formData: FormData): Promise<AuthFormState> {
     const parsed = signInSchema.safeParse(Object.fromEntries(formData));
-    if (!parsed.success) return { success: false, message: "Onjuist e-mailadres of wachtwoord" };
+    if (!parsed.success) return { success: false, message: invalidEmailOrPassword };
 
     const { email, password } = parsed.data;
     const { rows } = await db.query(
@@ -49,7 +50,8 @@ export async function signIn(_prev: AuthFormState, formData: FormData): Promise<
     const user = rows[0];
 
     const valid = await argon2.verify(user?.password_hash ?? (await getDummyHash()), password);
-    if (!user || !valid || !user.is_active) return { success: false, message: "Onjuist e-mailadres of wachtwoord" };
+    if (!user || !valid || !user.is_active)
+        return { success: false, message: invalidEmailOrPassword };
 
     await createSession(user.id);
     console.log(`successfully logged in user '${email}'`);

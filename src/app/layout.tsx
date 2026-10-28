@@ -28,9 +28,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
                 </style>
             </head>
             <body>
-                <UserProvider user={user}>
-                    {children}
-                </UserProvider>
+                <UserProvider user={user}>{children}</UserProvider>
             </body>
         </html>
     );
