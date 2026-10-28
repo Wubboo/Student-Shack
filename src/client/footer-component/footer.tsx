@@ -38,7 +38,7 @@ function Footer() {
                 <a href="">Cookie Instellingen</a>
             </div>
             <div className="copyright-footer">
-                <p>copyright</p>
+                <p>© {new Date().getFullYear()} Student Shack. Alle rechten voorbehouden.</p>
             </div>
         </div>
     );
