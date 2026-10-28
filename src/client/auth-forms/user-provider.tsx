@@ -6,13 +6,13 @@ import type { SessionUser } from "@/shared/auth-schemas";
 const UserContext = createContext<SessionUser | null>(null);
 
 export function UserProvider({
-  user,
-  children,
+    user,
+    children,
 }: {
-  user: SessionUser | null;
-  children: React.ReactNode;
+    user: SessionUser | null;
+    children: React.ReactNode;
 }) {
-  return <UserContext.Provider value={user}>{children}</UserContext.Provider>;
+    return <UserContext.Provider value={user}>{children}</UserContext.Provider>;
 }
 
 /** The signed-in user, or null. */
