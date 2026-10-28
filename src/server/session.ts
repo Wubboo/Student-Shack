@@ -30,7 +30,6 @@ export async function createSession(userId: string) {
     });
 }
 
-/** Returns the signed-in user, or null. Call from server code. */
 export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
     const cookie = await cookies();
     const token = cookie.get(COOKIE)?.value;
