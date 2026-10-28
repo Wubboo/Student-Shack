@@ -1,10 +1,12 @@
 import "./page.css";
 import Banner from "../client/banner-component-mobile/banner";
+import Footer from "@/client/footer-component/footer";
 
 function App() {
     return (
-        <div>
+        <div className="page-layout">
             <Banner />
+            <Footer />
         </div>
     );
 }
