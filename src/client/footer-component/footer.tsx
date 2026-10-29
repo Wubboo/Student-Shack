@@ -18,13 +18,13 @@ function Footer() {
                 </p>
             </div>
             <div className="social-icons-footer">
-                <a href="">
+                <a href="youtube.com">
                     <YoutubeIcon />
                 </a>
-                <a href="">
+                <a href="instagram.com">
                     <InstagramIcon />
                 </a>
-                <a href="">
+                <a href="linkedin.com">
                     <LinkedInIcon />
                 </a>
             </div>

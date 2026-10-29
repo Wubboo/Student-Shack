@@ -7,7 +7,7 @@ import { useState } from "react";
 function Banner() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <div className="container">
+        <>
             <div className="banner-bar">
                 <div className="burgur-button-container">
                     <button
@@ -43,7 +43,7 @@ function Banner() {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     );
 }
 

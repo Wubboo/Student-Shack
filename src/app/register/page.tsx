@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <div className="page-layout">
             <Banner />
-            <SignupForm />
+            <SignUpForm />
             <Footer />
         </div>
     );

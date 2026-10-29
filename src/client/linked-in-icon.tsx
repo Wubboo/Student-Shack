@@ -15,9 +15,9 @@ function LinkedInIcon() {
 
             <path
                 fill="#FFFFFF"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M4 1h16a3 3 0 0 1 3 3v16a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
             />
         </svg>
     );

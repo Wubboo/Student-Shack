@@ -1,4 +1,3 @@
-import { SignupForm } from "@/client/auth-forms/form";
 import Banner from "@/client/banner-component-mobile/banner";
 import "@/app/page.css";
 import Footer from "@/client/footer-component/footer";
