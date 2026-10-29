@@ -1,0 +1,20 @@
+:root {
+    --text-color: #6750A4;
+    --background-color: #f3edf7;
+}
+
+
+.over-ons-container {
+    margin: 0;
+    box-sizing: border-box;
+
+
+    min-width: 100%;
+    min-height: 294px;
+    background-color: var(--background-color);
+}
+
+.onze-missie{
+    color: var(--text-color);
+    font-weight: bold;
+}
