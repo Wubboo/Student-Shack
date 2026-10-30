@@ -10,6 +10,8 @@
     align-items: center;
     gap: 10px;
     margin: 20px 0;
+    color: inherit;
+    text-decoration: none;
 }
 
 .logoAndName p {

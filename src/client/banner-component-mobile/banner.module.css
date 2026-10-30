@@ -59,7 +59,9 @@
     justify-content: space-evenly;
     gap: 10px;
     padding-right: 30px;
+    color: inherit;
     font-weight: 450;
+    text-decoration: none;
 }
 
 .logoAndName svg {

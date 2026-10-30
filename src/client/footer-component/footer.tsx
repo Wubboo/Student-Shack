@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+import Link from "next/link";
 import YoutubeIcon from "../youtube-logo";
 import HouseIcon from "../house";
 import InstagramIcon from "../instagram-icon";
@@ -7,10 +8,10 @@ import LinkedInIcon from "../linked-in-icon";
 function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className={styles.logoAndName}>
+            <Link className={styles.logoAndName} href="/" aria-label="Student Shack home">
                 <HouseIcon />
                 <p>Student Shack</p>
-            </div>
+            </Link>
             <div className={styles.footerText}>
                 <p>
                     Het veiligste en meest transparante platform om studentenhuisvesting in

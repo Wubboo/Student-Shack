@@ -1,5 +1,6 @@
 "use client";
 import styles from "./banner.module.css";
+import Link from "next/link";
 import BurgerIcon from "../burger";
 import HouseIcon from "../house";
 import { useState } from "react";
@@ -18,10 +19,14 @@ function Banner() {
                         <BurgerIcon />
                     </button>
                 </div>
-                <div className={styles.logoAndName}>
+                <Link
+                    className={styles.logoAndName}
+                    href="/"
+                    aria-label="Student Shack home"
+                >
                     <HouseIcon />
                     <p>Student Shack</p>
-                </div>
+                </Link>
             </div>
 
             {menuOpen && (
