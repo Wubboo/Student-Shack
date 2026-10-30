@@ -2,9 +2,15 @@
     min-width: 100%;
     min-height: 294px;
     background-color: #f3edf7;
+
 }
 
 .mission {
     color: #6750a4;
     font-weight: 700;
+}
+
+.container p{ 
+    margin: 0;
+    margin-left: 20px;
 }
