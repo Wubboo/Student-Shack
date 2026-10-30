@@ -5,6 +5,7 @@
 ## Projectgegevens
 
 #### Begin en einddatum
+
 **Begindatum:** 30/10/26
 **Einddatum:** 06/11/26
 
@@ -28,7 +29,7 @@ om dit af te maken moet ik:
 
 - verder met leren over css modules
 - verder met leren over hoe je indutry standard reactjs en node gebruikt (denk aan doe doe je de css, hoe werkt de base-layout ect)
-- verder met leren over routing 
+- verder met leren over routing
 - verder met leren hoe te werken met react and node.js + typescript
 
 ## Werk processen

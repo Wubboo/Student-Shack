@@ -19,11 +19,7 @@ function Banner() {
                         <BurgerIcon />
                     </button>
                 </div>
-                <Link
-                    className={styles.logoAndName}
-                    href="/"
-                    aria-label="Student Shack home"
-                >
+                <Link className={styles.logoAndName} href="/" aria-label="Student Shack home">
                     <HouseIcon />
                     <p>Student Shack</p>
                 </Link>

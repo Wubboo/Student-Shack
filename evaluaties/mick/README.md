@@ -40,9 +40,6 @@ Student-Shack moet tijdens deze sprint blijven voldoen aan de volgende eisen:
 
 De leerdoelen van deze sprint zijn:
 
-
-
-
 ## Kerntaken / Werkprocessen
 
 Met deze opdracht hoop ik de volgende kerntaken en werkprocessen verder te vullen:

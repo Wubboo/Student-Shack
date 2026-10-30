@@ -37,12 +37,11 @@ Helaas is het door mijn ziekte niet gelukt om de review-, zoek- en hero-componen
 ## Kerntaken en Werkprocessen
 
 - **B1-K1 | Realiseert software**
-  - **W1 | Stemt opdracht af, plant werkzaamheden en bewaakt de voortgang:** Samen met Mick ben ik deze week bezig geweest met verschillende componenten.
-  - **W2 | Maakt een technisch ontwerp voor software:** Samen met Max heb ik in Figma verschillende mock-ups gemaakt.
-  - **W3 | Realiseert (onderdelen van) software:** Ik heb gewerkt aan de banner, het burgermenu, de footer en de registreerpagina.
+    - **W1 | Stemt opdracht af, plant werkzaamheden en bewaakt de voortgang:** Samen met Mick ben ik deze week bezig geweest met verschillende componenten.
+    - **W2 | Maakt een technisch ontwerp voor software:** Samen met Max heb ik in Figma verschillende mock-ups gemaakt.
+    - **W3 | Realiseert (onderdelen van) software:** Ik heb gewerkt aan de banner, het burgermenu, de footer en de registreerpagina.
 
 - **B1-K2 | Voert ICT-projecten uit**
-  - **W1 | Werkt samen in een projectteam:** Ik werk samen met Mick en Max.
-  - **W2 | Presenteert het opgeleverde werk:** Samen met Mick en Max heb ik de pull request doorgenomen en hebben we hierover beslissingen genomen.
-  - **W3 | Evalueert de samenwerking:** De samenwerking verliep soepel.
-
+    - **W1 | Werkt samen in een projectteam:** Ik werk samen met Mick en Max.
+    - **W2 | Presenteert het opgeleverde werk:** Samen met Mick en Max heb ik de pull request doorgenomen en hebben we hierover beslissingen genomen.
+    - **W3 | Evalueert de samenwerking:** De samenwerking verliep soepel.
