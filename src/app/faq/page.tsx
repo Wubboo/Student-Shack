@@ -1,12 +1,8 @@
-import Banner from "@/client/banner-component-mobile/banner";
-import Footer from "@/client/footer-component/footer";
-import "@/app/page.css";
-
-export default function Page() {
+export default function FAQPage() {
     return (
-        <div className="page-layout">
-            <Banner />
-            <Footer />
-        </div>
+        <>
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions here.</p>
+        </>
     );
 }

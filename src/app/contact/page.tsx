@@ -1,14 +1,8 @@
-import Banner from "@/client/banner-component-mobile/banner";
-import Footer from "@/client/footer-component/footer";
-import "@/app/page.css";
-
-export default function Page() {
+export default function ContactPage() {
     return (
         <>
-            <div className="page-layout">
-                <Banner />
-                <Footer />
-            </div>
+            <h2>Contact Us</h2>
+            <p>Get in touch with us!</p>
         </>
     );
 }

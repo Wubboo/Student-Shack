@@ -1,14 +1,9 @@
-import "./page.css";
-import Banner from "../client/banner-component-mobile/banner";
-import Footer from "@/client/footer-component/footer";
+import { Loading } from "@/client/Loading";
 
-function App() {
-    return (
-        <div className="page-layout">
-            <Banner />
-            <Footer />
-        </div>
-    );
+export default function HomePageWrapper() {
+    return(
+        <> <h1>Welcome to Student Shack</h1>
+    <Loading />
+    </>
+    )
 }
-
-export default App;

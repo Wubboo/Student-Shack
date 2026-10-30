@@ -3,7 +3,7 @@
 import { HTMLInputAutoCompleteAttribute, useActionState, useEffect } from "react";
 import { signIn, signUp } from "@/server/auth";
 import { Input } from "./form-input";
-import "./main.css";
+import styles from "./form.module.css";
 
 const Username = ({
     disabled,
@@ -79,7 +79,7 @@ export function SignUpForm({ onSuccess }: { onSuccess?: () => void }) {
     const success = state?.success ?? false;
     const disabled = pending || success;
     return (
-        <form action={serverAction} className="signup-form">
+        <form action={serverAction} className={styles.form}>
             <Username disabled={disabled} errors={errors?.name} />
             <Email disabled={disabled} errors={errors?.email} />
             <Password disabled={disabled} autoComplete="new-password" errors={errors?.password} />
@@ -95,12 +95,12 @@ export function SignInForm({ onSuccess }: { onSuccess?: () => void }) {
 
     useEffect(() => {
         if (success) onSuccess?.();
-    }, [state, onSuccess]);
+    }, [success, onSuccess]);
 
     const errors = state?.errors;
     const disabled = pending || success;
     return (
-        <form action={serverAction} className="signup-form">
+        <form action={serverAction} className={styles.form}>
             <Email disabled={disabled} errors={errors?.email} />
             <Password
                 disabled={disabled}
