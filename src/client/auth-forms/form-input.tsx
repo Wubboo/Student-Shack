@@ -1,5 +1,5 @@
 import type { ComponentPropsWithoutRef } from "react";
-import "./main.css";
+import styles from "./form.module.css";
 
 export type InputProps = ComponentPropsWithoutRef<"input"> & {
     label: string;
@@ -9,13 +9,13 @@ export type InputProps = ComponentPropsWithoutRef<"input"> & {
 
 export const Input = ({ label, htmlFor, errors, ...input }: InputProps) => (
     <>
-        <label htmlFor={htmlFor}>
+        <label className={styles.label} htmlFor={htmlFor}>
             {label}
             <input {...input} />
         </label>
 
         {errors?.map((e) => (
-            <p key={e} role="alert">
+            <p className={styles.error} key={e} role="alert">
                 {e}
             </p>
         ))}

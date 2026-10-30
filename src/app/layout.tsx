@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Author } from "next/dist/lib/metadata/types/metadata-types";
 import Authors from "@/../public/authors.json";
-import { UserProvider } from "@/client/auth-forms/user-provider";
-import { getSessionUser } from "@/server/session";
+import Banner from "@/client/banner-component-mobile/banner";
+import Footer from "@/client/footer-component/footer";
+import { Loading } from "@/client/Loading";
+import SessionUserProvider from "@/app/session-user-provider";
+import { Suspense } from "react";
+import "./globals.css";
 
 const authors: Author[] = Authors.map((author) => ({
     name: author.legalName,
@@ -16,19 +20,19 @@ export const metadata: Metadata = {
     authors: authors,
 };
 
-// Frontend React is mounted inside of the RootLayout
-export default async function RootLayout({ children }: LayoutProps<"/">) {
-    const user = await getSessionUser();
+export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html lang="nl">
-            <head>
-                <style>
-                    @import
-                    url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
-                </style>
-            </head>
             <body>
-                <UserProvider user={user}>{children}</UserProvider>
+                <div className="page-layout">
+                    <Banner />
+                    <main className="page-content">
+                        <Suspense fallback={<Loading />}>
+                            <SessionUserProvider>{children}</SessionUserProvider>
+                        </Suspense>
+                    </main>
+                    <Footer />
+                </div>
             </body>
         </html>
     );
